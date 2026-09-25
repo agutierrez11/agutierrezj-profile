@@ -406,18 +406,76 @@ export default function Home() {
             </h2>
           </div>
 
-          <div className="max-w-2xl mx-auto space-y-6">
-            {/* Disponibilidad actual */}
-            <div className="bg-card border border-border rounded-2xl p-5">
-              <div className="label-sm text-secondary mb-4">{t('contact.availability.label')}</div>
-              <div className="flex flex-wrap gap-3">
-                {[t('contact.avail.commercial'), t('contact.avail.alliances'), t('contact.avail.special')].map(item => (
-                  <div key={item} className="flex items-center gap-2">
-                    <span className="w-2 h-2 rounded-full bg-secondary"></span>
-                    <span className="text-sm font-medium">{item}</span>
-                    <span className="px-2 py-0.5 bg-secondary text-white text-[10px] font-bold rounded-full">{t('contact.open')}</span>
+          <div className="max-w-3xl mx-auto space-y-6">
+            {/* Frase de Posicionamiento Ejecutivo */}
+            <div className="bg-card border border-border border-l-4 border-l-secondary rounded-2xl p-6 shadow-sm relative overflow-hidden">
+              <div className="flex items-start gap-4">
+                <div className="w-10 h-10 rounded-xl bg-secondary/10 flex items-center justify-center text-secondary shrink-0 text-2xl font-serif leading-none">
+                  “
+                </div>
+                <div>
+                  <p className="text-base sm:text-lg font-medium text-foreground leading-relaxed">
+                    {t('exec.positioning')}
+                  </p>
+                  <div className="mt-2 text-xs font-mono text-secondary font-semibold uppercase tracking-wider">
+                    Antonio Gutiérrez Jiménez · B2B Fintech & Merchant Acquiring Lead
                   </div>
-                ))}
+                </div>
+              </div>
+            </div>
+
+            {/* Bento Grid: Roles Buscados & Condiciones de Contratación */}
+            <div className="grid md:grid-cols-2 gap-4">
+              {/* Target Roles */}
+              <div className="bg-card border border-border rounded-2xl p-5 shadow-sm flex flex-col justify-between">
+                <div>
+                  <div className="label-sm text-secondary mb-3">{t('exec.targetRoles.title')}</div>
+                  <div className="flex flex-wrap gap-2">
+                    {[
+                      { role: 'Fintech Partnerships', icon: '🤝' },
+                      { role: 'Merchant Acquiring Lead', icon: '💳' },
+                      { role: 'B2B Enterprise Sales', icon: '🚀' },
+                      { role: 'GTM Manager LATAM', icon: '🌎' },
+                      { role: 'Strategic Accounts', icon: '🎯' },
+                    ].map(r => (
+                      <span
+                        key={r.role}
+                        className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-secondary/10 border border-secondary/20 text-xs font-semibold text-foreground hover:border-secondary transition-colors"
+                      >
+                        <span>{r.icon}</span>
+                        <span>{r.role}</span>
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              </div>
+
+              {/* Contracting Conditions */}
+              <div className="bg-card border border-border rounded-2xl p-5 shadow-sm flex flex-col justify-between">
+                <div>
+                  <div className="label-sm text-secondary mb-3">{t('exec.contracting.title')}</div>
+                  <div className="space-y-2.5">
+                    <div className="flex items-center justify-between text-xs pb-2 border-b border-border/50">
+                      <span className="text-muted-foreground font-medium">{t('exec.location.label')}:</span>
+                      <span className="font-semibold text-foreground flex items-center gap-1">
+                        <span>📍</span> {t('exec.location.val')}
+                      </span>
+                    </div>
+                    <div className="flex items-center justify-between text-xs pb-2 border-b border-border/50">
+                      <span className="text-muted-foreground font-medium">{t('exec.workMode.label')}:</span>
+                      <span className="font-semibold text-foreground flex items-center gap-1">
+                        <span>💻</span> {t('exec.workMode.val')}
+                      </span>
+                    </div>
+                    <div className="flex items-center justify-between text-xs">
+                      <span className="text-muted-foreground font-medium">{t('exec.status.label')}:</span>
+                      <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 font-mono text-[11px] font-bold">
+                        <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
+                        {t('exec.status.val')}
+                      </span>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
 
