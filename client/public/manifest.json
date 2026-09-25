@@ -1,0 +1,16 @@
+{
+  "name": "Antonio Gutiérrez Jiménez | B2B Fintech Sales Executive",
+  "short_name": "Antonio Gutiérrez",
+  "description": "Portafolio profesional de Antonio Gutiérrez Jiménez, ejecutivo B2B especializado en fintech, merchant acquiring, alianzas estratégicas y crecimiento comercial en LATAM.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#020617",
+  "theme_color": "#020617",
+  "icons": [
+    {
+      "src": "/foto_informal_jersey_2.jpg",
+      "sizes": "192x192 512x512",
+      "type": "image/jpeg"
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://cvagutierrezj2026.pages.dev/sitemap.xml

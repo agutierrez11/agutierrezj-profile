@@ -21,6 +21,8 @@ import {
   Moon,
   Building2,
   MessageSquare,
+  FileDown,
+  Download,
 } from 'lucide-react';
 
 /**
@@ -207,6 +209,19 @@ export default function Home() {
             </a>
           </div>
           <div className="flex items-center gap-3">
+            {/* Download CV Button */}
+            <a
+              href="/ANTONIO_GUTIERREZ_CV.pdf"
+              download="ANTONIO_GUTIERREZ_CV.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-secondary/40 bg-secondary/10 text-secondary text-xs font-semibold hover:bg-secondary/20 transition-all shadow-sm"
+              title="Descargar CV en PDF"
+            >
+              <FileDown className="w-3.5 h-3.5" />
+              <span>CV PDF</span>
+            </a>
+
             {/* Language Selector */}
             <button
               onClick={() => setLanguage(language === 'es' ? 'en' : 'es')}
@@ -283,14 +298,20 @@ export default function Home() {
             </div>
 
             {/* CTA Buttons */}
-            <div className="flex flex-wrap gap-4">
-              <a href="#contacto">
-                <Button className="bg-secondary text-white font-bold px-8 py-3.5 text-base rounded-xl shadow-lg hover:opacity-90 hover:scale-[1.02] transition-all">
+            <div className="flex flex-wrap gap-3.5 items-center">
+              <a href="https://linkedin.com/in/agjbusiness/" target="_blank" rel="noopener noreferrer">
+                <Button className="bg-secondary text-white font-bold px-7 py-3.5 text-base rounded-xl shadow-lg hover:opacity-90 hover:scale-[1.02] transition-all">
                   {t('hero.ctaSecondary')} <ArrowRight className="w-4 h-4 ml-2" />
                 </Button>
               </a>
+              <a href="/ANTONIO_GUTIERREZ_CV.pdf" download="ANTONIO_GUTIERREZ_CV.pdf" target="_blank" rel="noopener noreferrer">
+                <Button variant="outline" className="border border-secondary/40 bg-secondary/10 text-secondary hover:bg-secondary/20 font-semibold px-6 py-3.5 text-base rounded-xl transition-all shadow-sm">
+                  <FileDown className="w-4 h-4 mr-2" />
+                  {t('nav.downloadCV')}
+                </Button>
+              </a>
               <a href="#trayectoria">
-                <Button variant="outline" className="border border-border bg-card text-foreground hover:bg-muted px-7 py-3.5 text-base rounded-xl transition-all">
+                <Button variant="ghost" className="text-muted-foreground hover:text-foreground hover:bg-muted px-5 py-3.5 text-base rounded-xl transition-all">
                   {t('hero.ctaPrimary')}
                 </Button>
               </a>
@@ -1279,6 +1300,12 @@ export default function Home() {
             </div>
             {/* Right: contact */}
             <div className="space-y-2 text-sm text-muted-foreground">
+              <div className="flex items-center gap-2">
+                <span>📄</span>
+                <a href="/ANTONIO_GUTIERREZ_CV.pdf" download="ANTONIO_GUTIERREZ_CV.pdf" target="_blank" rel="noopener noreferrer" className="font-semibold text-secondary hover:underline transition-colors">
+                  Descargar CV Ejecutivo (PDF)
+                </a>
+              </div>
               <div className="flex items-center gap-2">
                 <span>✉️</span>
                 <a href="mailto:antoniogtzjimenez@gmail.com" className="hover:text-foreground transition-colors">antoniogtzjimenez@gmail.com</a>
