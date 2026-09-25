@@ -299,7 +299,7 @@ export default function Home() {
 
             {/* CTA Buttons */}
             <div className="flex flex-wrap gap-3.5 items-center">
-              <a href="https://linkedin.com/in/agjbusiness/" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.linkedin.com/in/antoniogtzj/" target="_blank" rel="noopener noreferrer">
                 <Button className="bg-secondary text-white font-bold px-7 py-3.5 text-base rounded-xl shadow-lg hover:opacity-90 hover:scale-[1.02] transition-all">
                   {t('hero.ctaSecondary')} <ArrowRight className="w-4 h-4 ml-2" />
                 </Button>
@@ -428,7 +428,7 @@ export default function Home() {
                 {[
                   { icon: '✉️', label: t('contact.item.email.label'), value: 'antoniogtzjimenez@gmail.com', href: 'mailto:antoniogtzjimenez@gmail.com', tag: 'MX' },
                   { icon: '📞', label: t('contact.item.phone.label'), value: '+52 998 119 1903', href: 'tel:+529981191903', tag: 'MX' },
-                  { icon: '💼', label: t('contact.item.linkedin.label'), value: 'linkedin.com/in/agjbusiness/', href: 'https://linkedin.com/in/agjbusiness/', tag: 'LATAM' },
+                  { icon: '💼', label: t('contact.item.linkedin.label'), value: 'linkedin.com/in/antoniogtzj/', href: 'https://www.linkedin.com/in/antoniogtzj/', tag: 'LATAM' },
                   { icon: '📍', label: t('contact.item.location.label'), value: t('contact.item.location.value'), href: null, tag: 'MX' },
                 ].map((c, i) => (
                   <div key={i} className="flex items-center gap-4 p-4 bg-card border border-border rounded-xl hover:border-secondary/50 transition-colors">
@@ -483,7 +483,7 @@ export default function Home() {
                 className="flex-1 text-center px-6 py-3 bg-secondary text-white rounded-xl font-bold hover:bg-secondary/90 transition-colors">
                 {t('contact.cta.whatsapp')}
               </a>
-              <a href="https://linkedin.com/in/agjbusiness/" target="_blank" rel="noopener noreferrer"
+              <a href="https://www.linkedin.com/in/antoniogtzj/" target="_blank" rel="noopener noreferrer"
                 className="flex-1 text-center px-6 py-3 border border-border rounded-xl font-bold hover:border-secondary hover:text-secondary transition-colors">
                 {t('contact.cta.linkedin')}
               </a>
@@ -1312,7 +1312,7 @@ export default function Home() {
               </div>
               <div className="flex items-center gap-2">
                 <span>💼</span>
-                <a href="https://linkedin.com/in/agjbusiness/" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">linkedin.com/in/agjbusiness</a>
+                <a href="https://www.linkedin.com/in/antoniogtzj/" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">linkedin.com/in/antoniogtzj</a>
               </div>
               <div className="flex items-center gap-2">
                 <span>📞</span>
