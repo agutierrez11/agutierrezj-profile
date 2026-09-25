@@ -153,7 +153,7 @@ export function ParallaxFintechElements({ scrollY }: ParallaxFintechElementsProp
   return (
     <div
       style={{
-        position: 'fixed',
+        position: 'absolute',
         inset: 0,
         zIndex: 1,
         pointerEvents: 'none',

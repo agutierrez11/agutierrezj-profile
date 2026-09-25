@@ -372,16 +372,7 @@ export default function Home() {
       </section>
 
       {/* Contact Section */}
-      <section id="contacto" className="relative py-12 bg-background border-t border-b border-border/30 overflow-hidden">
-        {/* Parallax blobs */}
-        <div
-          className="absolute top-0 right-0 w-80 h-80 bg-secondary/10 rounded-full blur-3xl pointer-events-none"
-          style={{ transform: `translate3d(0, ${scrollY * -0.05}px, 0)` }}
-        />
-        <div
-          className="absolute bottom-0 left-0 w-64 h-64 bg-accent/10 rounded-full blur-3xl pointer-events-none"
-          style={{ transform: `translate3d(0, ${scrollY * 0.04}px, 0)` }}
-        />
+      <section id="contacto" className="relative py-12 bg-background border-t border-b border-border/30">
         <div className="container relative z-10">
           <div className="mb-8 text-center">
             {/* Profile photo - bigger */}
@@ -740,17 +731,7 @@ export default function Home() {
       </section>
 
       {/* Red Activa Section */}
-      <section id="red-activa" className="relative py-16 bg-background border-t border-border/30 overflow-hidden" data-clarity-unmask="true">
-        {/* Parallax background elements */}
-        <div
-          className="absolute top-10 left-10 w-72 h-72 bg-primary/5 rounded-full blur-3xl pointer-events-none"
-          style={{ transform: `translate3d(0, ${scrollY * 0.05}px, 0)` }}
-        />
-        <div
-          className="absolute bottom-10 right-10 w-72 h-72 bg-secondary/5 rounded-full blur-3xl pointer-events-none"
-          style={{ transform: `translate3d(0, ${scrollY * -0.05}px, 0)` }}
-        />
-
+      <section id="red-activa" className="relative py-16 bg-background border-t border-border/30" data-clarity-unmask="true">
         <div className="container relative z-10">
           <div className="mb-10 scroll-reveal">
             <div className="label-sm text-secondary mb-2">{t('section.network.label')}</div>
@@ -988,7 +969,7 @@ export default function Home() {
       </section>
 
       {/* Proyectos Section */}
-      <section id="proyectos" className="relative py-8 bg-gradient-to-b from-background to-primary/5">
+      <section id="proyectos" className="relative py-8 bg-background border-t border-border/30">
         <div className="container">
           <div className="mb-8 scroll-reveal">
             <div className="label-sm text-secondary mb-2">{t('section.projects.label')}</div>
